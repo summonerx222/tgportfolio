@@ -26,7 +26,7 @@ form.addEventListener("submit", async (event) => {
   };
 
   try {
-    const response = await fetch(https://n8n.nppsatek.ru/webhook/test-webhook, {
+    const response = await fetch("https://n8n.nppsatek.ru/webhook/test-webhook", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -43,7 +43,7 @@ form.addEventListener("submit", async (event) => {
     statusEl.className = "form-status success";
   } catch (error) {
     console.error("Ошибка отправки формы:", error);
-    statusEl.textContent = "Не удалось отправить заявку. Проверь URL webhook или повторите позже.";
+    statusEl.textContent = "Не удалось отправить заявку. Проверьте URL или повторите попытку позже.";
     statusEl.className = "form-status error";
   } finally {
     submitBtn.disabled = false;
