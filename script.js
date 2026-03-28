@@ -26,7 +26,7 @@ form.addEventListener("submit", async (event) => {
   };
 
   try {
-    const response = await fetch(WEBHOOK_URL, {
+    const response = await fetch(https://n8n.nppsatek.ru/webhook/test-webhook, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
